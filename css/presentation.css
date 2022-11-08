@@ -1,0 +1,37 @@
+.red{
+	color: #ff0a77;
+}
+.green{
+	color: #42dca3;
+}
+
+.black{
+	color: rgba(0,0,0,0.5);
+}
+.faded{
+	opacity: 0.6;
+}
+
+#logo{
+	background-color: rgba(0,0,0,0);
+	box-shadow: none;
+	border: none;
+	margin: 0px;
+	height: 100px;
+}
+
+iframe{
+	overflow:hidden;
+	width: 1200px;
+	height: 700px;
+	margin-top: -100px;
+	left: 0px;
+}
+
+#frameSection{
+	top: 0;
+}
+
+.image-tint{
+	  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+}

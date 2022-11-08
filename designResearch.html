@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Design research</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/presentation.css">
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-transition="convex">
+					<section>
+						<h1>Design Research<span class = "red"><sup>+</sup></span></h1>
+						<h3>Lessons from <span class = "red">ethnography</span> and <span class = "red">data science</span> </h3>
+					</section>	
+					<section>
+						<h3>Bit of disclosure</h3>
+						<p><small>I don't have a design qualification but I do identify (a lot of the time) as a designer.</small></p>
+						<div><img id = "logo" src = "images/ylab.png"><span style = "font-size: 150px"> / </span>  <img id = "logo"  src = "images/littleLogo.png"> </div>
+			    		<aside class="notes">
+					        About me (Brendan): For the last couple of years I've made a living as a freelancer (a 'portfolio' career). I split my time between working on an ongoing casual basis with a couple of NGO's (FYA/YLab being one where I've been handed the title of 'Technical Advisor'); and I run a design lab called 'Little Sketches' where I practice strategic design and visualisation, pretty much exclusively in the areas of environmental and social sustainability. I also tinker a lot with web technologies and data science. 
+
+					        Previously, I spent dozen years in strategy and technology consulting, investment management, but mostly as a sustainability consultant (main passion). I came to design initially through information and data design (trying to make models more digestible), then through digital and graphic design (using the web, and understanding form and tell visual stories), and then through strategic design 'thinking' (on a mission to rethink what I do from a systemic and innovation lens). I'm currently most fascinated with speculative and relational design theory (getting 'meta') and the how to weave design with data science to scale social change. 
+					    </aside>
+
+					</section>	
+
+					<section>
+						<h4>Thought #1</h4>
+						<h3>all <span class = "red">good design</span> is human centered</h3>
+			    		
+			    		<aside class="notes">
+					        The methods and processed you'll learn in Design Thinking, Human Centered Design, User Centered Design etc. are not new to 'designers'. These processes are a great introduction to how designers think (or are taught); but try to think of them as just that. Design is by nature, chaotic. Letting yourself embrace that chaos is half the challenge. And try not to be overly rigid with the process. 
+					    </aside>
+					</section>	
+
+					<section>
+						<h4>Thought #2</h4>
+						<h3><span class = "red">Not</span><span> every complex problem requires design thinking.</span></h3>
+			    		
+			    		<aside class="notes">
+					        If you go to enough design thinking or HCD courses you might get the impression that every challenge can and should be solved by design. I'd argue that this is not always correct. There are expert driven solutions and advances - particularly in areas like technology, engineering, energy, academia, medicine and business - that don't benefit greatly from design. There are certainly common mindsets and tools that you'll see repeated in design, but they are also native to other disciplines.
+					        <br>
+					        Try not to think of design a magic bullet for problem solving and innovation. Think of it as a set of tools that work well together. And if the process seems 'obvious' to you, or if its what you already do, then that's great. It's meant to be human.
+					        <br>
+					        Jeanne Liedtke course in Design for Business Innovation is a good example a well balanced view to when to use design: https://www.coursera.org/learn/design-thinking-innovation
+					    </aside>
+
+					</section>	
+				</section>
+
+				<section data-transition="convex">
+					<section data-background ="images/designresearch-01.jpg">
+						<h4>The goal of design research:</h4>
+						<h2>To build <span class = "red">empathy</span> and <span class = "red">understanding</span> of the people you're designing for.</h2>
+						<h4>...<span class = "red">good design</span> follows.</h4>
+
+			    		<aside class="notes">
+							Design research is about gaining empathy and understanding, and that will be the primary focus of this discussion. Research however, is ongoing in the design process - we're are testing and looking for ways to improve - so we'll also discuss how ethnographic tools and data are used to inform design throughout the process. 
+					    </aside>
+					</section>
+				</section>
+
+				<section data-transition="convex">
+					<section data-background ="images/colours.jpg">
+						<h2>Why <span class = "red">ethnography</span> and <span class = "red">data science</span>?</h2>
+						<h4>A richer tapestry for sense-making and <span class = "red">innovation</span></h4>
+						<p><small>...and we know you've got user research training resources!</small>	</p>				
+
+			    		<aside class="notes">
+							We'll look at these concepts in the context of design because they are somewhat 'extreme'. Ethnography is possibly in-depth way to gain empathy for someone. It's very human. Data (science) on the other hand has a reputation of being un-human. By looking at these concepts together we might weave a broader net for innovation, which has become synonymous with the language of design.
+					    </aside>
+					</section>
+
+					<section data-background ="images/colours.jpg">
+						<h4>Thought #3</h4>
+						<h3>Human Centered Design (HCD) leads to <span class = "red">incremental</span> innovation.</h3>
+					</section>	
+
+					<section data-background ="images/normanverganti-01.png">
+						<h2><span class="black">Incremental and radical</span><span class="red"> innovation: </span></h2>
+						<h4 style = "margin-top: -30px"><span class="black">Design research vs Technology and Meaning Change</span></h4>
+						<p><small> <a href = "https://www.researchgate.net/publication/264595739_Incremental_and_Radical_Innovation_Design_Research_vs_Technology_and_Meaning_Change">A paper by Don Norman and Roberto Verganti (2014)</a></small></p>
+					</section>		
+
+					<section data-background ="images/normanverganti-02.png">
+						<h3><span class="red">HCD leads to hill climbing </span></h3>
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<h4 style="text-align: right"><span class="red">Perhaps we should think about 'deep' empathy and technology?</span></h4>
+					</section>		
+
+				</section>
+
+
+				<!-- Ethnography -->
+				<section data-transition="convex">
+					<section data-background ="images/ethnography-01.jpg">
+						<h1>Ethnographic research</h1>
+						<p>Understand the cultural and human context of a problem.</p>
+					    <aside class="notes">
+					        Ethnography is a classic social discipline. It leads to really deep understanding.
+					    </aside>
+					</section>
+
+					<section data-background ="images/ethnography-01.jpg">
+						<h1>Watch people do stuff!</h1>
+						<p>Gaining insight from fieldwork and <span class = "red">observation</span>.</p>
+					    <aside class="notes">
+					        Observation is sometimes neglected in favour of more 'market' research methods (interviews, focus groups etc.).Why? Because the formal application is hard to do. It takes a lot of time and resources. It doesn't scale (and its not meant to). Market research methods include techniques like surveys, structured interviews, and focus groups. They tend to be geared how to predict behavior. With observation, we're looking for the unique and peculiar things that can inspire design. 
+					        <br>
+					        But observation is a really powerful and transferable skill.
+					    </aside>
+					</section>
+
+					<section data-background ="images/research-02.jpg">
+						<h2><span class = "red">Get out in the field. </span>Immerse yourself.</h2>
+						<p>Go to where the problem is happening (physically).</p>
+					    <aside class="notes">
+					        Last year I was involved in a project to develop the blueprint and business case for Australia's first Zero Net Energy Town in Uralla, NSW. We elected to use Human Centered Design as a broad framework (particularly for the lenses of Desirability, Feasible and Viable). 
+					        <br>
+					        Our whole team was from Melbourne and we went out to the town to conduct community engagement (activities, energy audits etc.), thinking that would be quite a comprehensive approach. Fortunately we got to stay with a local project director and it gave us extra time and budget to just hang out. And we learned alot about the town, its people, its culture, their behavior and what mattered to them.
+					        <br>
+					        Stuff like how the town used way more wood than we imagined really surprised us. And the grey economy where wood came from. The culture of the town and strength of community spirit we experienced in person.
+					    </aside>
+
+					</section>
+
+					<section data-background ="images/research-03.jpg">
+						<h2>It's a method of <span class = "red">inductive</span> research</h2>
+						<p>Be naive. You're not trying to test a hypothesis.</p>
+					    <aside class="notes">
+					        You're observations and session will be very unstructured. Thanks ok. The aim is not to 'get answers' to burning questions but to find 'new questions' and develop insights.
+					        <br>
+					        It can be hard to be naive. One tip is to remember to hold back. Ask why even if you know the answer. Don't correct and don't lead.
+					    </aside>
+
+					</section>
+
+					<section  data-background ="images/research-04.jpg">
+						<h2>What are you <span class = "red">observing</span></h2>
+						<ul>
+							<li>Physical space and interaction.</li>
+							<li>Sequence of work or actions to perform a task</li>
+							<li>Language (verbal and body) they use.</li> 
+							<li>The tools they use.</li> 
+						</ul>
+						<h3><br><span>Think about the what, how and why</span></h3>
+
+				    	<aside class="notes">
+					        Here's a more concrete idea of what you should be looking out to observe.  
+					    </aside>
+
+					</section>
+				
+					<section data-background ="images/research-01.jpg">
+						<h2>It's not really an interview...</h2>
+						<p>Heres's some tips: </p>
+						<ul>
+							<li>Ask open ended questions. Don't lead the discussion!</li>		
+							<li>Ask to hear about steps and process</li>		
+							<li>Ask to see examples and artefacts</li>
+							<li>Ask to try things</li>
+							<li>Be humble. You're there to listen!</li>
+						</ul>
+						<aside class="notes">
+					        Here are some tips about how to conduct your interaction with the person. Notice how this differs from a traditional interview.
+					    </aside>
+					</section>
+
+					<section  data-background ="images/research-05.jpg">
+						<h2>Planning and preparation</h2>
+						<ul>
+							<li>Be specific about who you're gaining empathy with.</li>
+							<li>Be mindful of permissions and logistics.</li>
+							<li>Recording and documentation: match your resources to how you'll record, document and analyse (this is resource intensive!)</li>
+						</ul>
+						<p><small> <a href = "http://library.ac4d.com/d/AC4D_designlibrary_Ethnographic_research.pdf">Here's a guide to ethnography from the AC4D</a></small></p>
+
+						<aside class="notes">
+					        Ethnographic methods take time to do, and they can generate alot of data (particularly if you're fully recording and transcribing). Make sure you understand this before starting out; or know that your observations are going to be mental.
+					    </aside>
+					</section>
+
+
+					<section data-background ="images/research-07.jpg">
+						<h4>Warning:</h4>
+						<h3>Designers borrow ethnographic tools. <br><span class = "red">But designers are not ethnographers!</span></h3>
+					</section>	
+
+				</section>
+
+				<!-- Ethnography observation exercise 1-->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">Ethnographers eye</span></h4>					
+						<h2>Observation exercise #1</h2>
+						<p><small><em>Apartment dwellers struggle to prepare fresh and healthy meals</em></small></p>
+
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-01.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-02.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-03.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-04.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-05.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>
+
+					<section data-background ="images/kitchen-06.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+					</section>						
+
+					<section>
+						<h2>Observations > themes > insights?</h2>					        
+					</section>						
+				</section>
+
+				<!-- Ethnography observation exercise 2-->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">Ethnographers eye</span></h4>		
+						<h2>Observation exercise #2</h2>
+						<p><small><em>Freelance designers struggle to co-operate to compete with large agencies</em></small></p>
+
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-01.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-02.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-03.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-04.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-05.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>
+
+					<section data-background ="images/workspace-06.jpg">
+					    <aside class="notes">
+					        
+					    </aside>
+						</section>						
+
+					<section>
+						<h2>Observations > themes > insights?</h2>					        
+					</section>						
+				</section>
+
+				<!-- Ethnography observation exercise 3-->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">More ethnographic stuff</span></h4>	
+						<h2>Observation exercise #3</h2>
+						<p><small> <em>Whats in the bag?</em></small></p>
+					    <aside class="notes">
+					        Talk to someone about what they carry to work. Ask them to show you what they take with them. What do the artefacts say?
+					    </aside>
+					</section>				
+				</section>
+
+
+				<!-- Ethnography data exercise-->
+				<section>
+					<section data-background ="images/designresearch-01.jpg">
+						<h4><span class = "red">Ethnographic output</span></h4>		
+						<h2>Getting to meaningful insights</h2>
+						<p><small><span class = "red">Moving from observation to themes and insights.</span></small></p>
+					</section>
+					<section data-background ="images/insights-02.jpg">
+						<h4><span class = "red">Document visually</span></h4>				
+						<h2>Key takeaway observations</h2>
+						<p>What stood out?</p>
+					</section>
+					<section data-background ="images/insights-01.jpg">
+						<h4><span class = "red">Look for patterns and anomalies</span></h4>	
+						<h2>Group your observations into themes</h2>
+						<p>This gets messy.</p>
+					</section>
+
+					<section data-background ="images/insights-01.jpg">
+						<h4><span class = "red">Sense making</span></h4>	
+						<h2>Frame insights</h2>
+						<p>State insights as fact...even if they might be wrong!</p>
+						<p><small><span class = "red">You can revisit them but you need insights to design for.</span></small></p>
+					</section>
+				</section>	
+
+
+				<!-- Data -->
+				<section data-transition="convex">
+					<section data-background ="images/data-01.jpg">
+						<h1>Data <span class = "faded">science</span></h1>
+						<p> <em>The role of data and data technologies in design research, prototyping and evaluation.</em></p>
+						<p><small><span class = "red">The stuff no designer really wants to talk about</span></small></p>
+		  			</section>
+
+					<section data-background ="images/data-01green.jpg">
+						<h4 style ="margin: 0px"><spnc class = "red">Data data everywhere</span></h4>		
+						<h2>Design in the data revolution</h2> 				
+						<ul>
+							<li>Technology is enabling an avalanche of data products</span></li> 
+							<li>Sensors and real-time data provides immediate feedback and inputs for designers</li> 
+							<li>Data underlies the design of very human products: housing, mobility, work, industry/making and socialising </li> 
+							<li>Robotics and machine learning</li>
+						</ul>
+						<p><small> <a href = "http://www.nature.com/articles/srep01376">And before you think about unplugging: a scientific study in Nature found that you can be identified with 95% accuracy from four mobile phone data points.</a></small></p>
+
+					    <aside class="notes">
+					        Our lives are filled with apps and sensors. The quantified self. 3-D printers. Drones. Tesla self driving cars. AirBNB, Uber, Netflix, Tinder
+					    </aside>
+					</section>
+
+					<section data-background ="images/data-01red.jpg">
+						<h4 style ="margin: 0px"><spnc class = "red">Data skepticism</span></h4>		
+						<h2>Data mythologies</h2>					
+						<ul>
+							<li>Data is just about <span class = >numbers</span></li> 
+							<li>Data is the <span = class = >objective truth</span></li> 
+							<li><span class = "">Big</span> data is <span class = "">better</span></li> 
+							<li>Data <span class = "">kills innovation</span></li>
+						</ul>
+						<p><small> <a href = "https://hbr.org/2013/04/the-hidden-biases-in-big-data">For more check out Kate Crawford's paper "The Hidden Biases in Big Data"</a></small></p>
+
+					    <aside class="notes">
+					        Language is data: think about how machines translate data (i.e. through natural language processing). Images are data: think about image recognition and processing; virtual and augmented reality. Sensors track your physical location and health.  
+							<br><br>
+							Data is often biased. For example, a survey question is framed. What questions are asked/left out. 
+							Even big data. Take for instance, Twitter: who are the users? Is this representative? Facebook: how 'real' are profiles? 
+							<br><br>
+							Data and data technologies (e.g. those used in machine learning) drive all of the  technology 'optimised' innovation today. What would Pokemon Go be like without data? And think about open data.
+					    </aside>
+					</section>
+
+					<section>
+						<h4>Challenge</h4>
+						<h3>We need to embrace <span class = "red">thick data</span> and <span class = "red">big data</span> in design.</span></h3>
+
+						<p><small> <a href = "http://ethnographymatters.net/blog/2013/05/13/big-data-needs-thick-data/">"Big Data needs Thick Data" (Tricia Wang, 2013)</a></small></br>
+						<small> <a href = "http://social.media.mit.edu/">MIT Social Computing Lab (Sep Kamvar)</a></small></p>
+						
+				    	<aside class="notes">
+				    	Tricia Wang: "Big Data reveals insights with a particular range of data points, while Thick Data reveals the social context of and connections between data points...The act of collecting and analyzing stories produces insights.""
+				    	<br>
+				    	MIT Social computing
+					        1. designing holistic, human-scale patterns for our urban landscape.
+							2. creating social processes that foster the creation, maintenance, and evolution of these patterns.
+							3. writing software to enable these social processes.
+					    </aside>
+					</section>
+
+					<section data-background ="images/data-03.jpg">
+						<h4 style ="margin: 0px"><span class = "red">Data in the wild:</span> Research</h4>					
+						<h2>Use data to support understanding</h2>
+						<ul>
+							<li>Data helps us understand what we know and would like to know.</li>
+							<li>Data helps us identify who to talk to.</li>
+							<li>Data provides real world constraints (this helps innovation). </li>
+							<li>Data can reduce our own biases.</li>
+						</ul>
+						<p style="text-align: center"><small><span class = "red">Data supports understanding if its useful for <em>everyone</em> involved in the design team.</span></small></p>
+
+				    	<aside class="notes">
+						    Think about data as a common language. Just about every study or report builds data. Be able to find and understand 'secondary' data helps avoid solving problems that don't exist.
+						    <br>
+						    Who uses a product or service? How do we find them? And how do we know they're the right people to talk to and build empathy with
+						    <br>
+						    Data - particularly market data - helps us design a solution to the right scale. Without constraints it is difficult to innovate. 
+						    <br>
+						    We are very influenced by our own environment and the people we're connected to. The echo chamber effect of anecdotes or data without 
+					    	<br>
+					    	You will come across experts in data,. And they should be embraced in the design team. Their role is to interpret complex data - not necessarily simplify - and ensure that designers and users (if they're presented data) understand the context of the data. 
+					    </aside>
+					</section>
+
+
+					<section data-background ="images/data-04.jpg">
+						<h4 style ="margin: 0px"><span class = "red">Data in the wild:</span> Research</h4>					
+						<h2>Present data with clarity and purpose</h2>
+						<p>Make data accessible for exploration. And link to raw data!</p>
+						<p><small><span class = "red">Charts, diagrams, and vignettes can help (but don't over do it!). <br> More on visualisation next week</span></small></p>
+					</section>
+
+					<section data-background ="images/data-01.jpg">
+						<h4 style ="margin: 0px"><span class = "red">Data in the wild:</span> Testing prototypes</h4>					
+						<h2>Use data to test prototypes</h2>
+						<p>How do users respond to the features we design?</p> 
+						<ul>
+							<li>Statistical: A/B (split) testing and multivariate testing.</li>
+							<li>Interpretative: User observation and feedback.</li>
+						</ul>
+						<p><small><span class = "red">All of these methods generate data. Try to use both to validate findings.</span></small></p>
+					</section>
+
+					<section data-background ="images/data-02.jpg">
+						<h4 style ="margin: 0px"><span class = "red">Data in the wild:</span> Iteration and impact</h4>									
+						<h2>Data to evaluate and improve design:</h2>
+						<ul>
+							<li>How would you measure the effectiveness of your design? (hint: revisit your design challenge)</li>
+							<li>Think about the outcomes are you seeking? Can they be measured? Over what time period?</li>
+							<li>What outputs are linked to your outcomes? Is there a baseline or counter-factual to measure? </li>
+							<li>Could measurement be built into the design?</li>
+						</ul>
+
+						<p><small><span class = "red">These questions point to more traditional monitoring and evaluation (e.g. understand a theory of change). But a good design strategy embraces iteration. We need to be agile in measurement.</span></small></p>
+
+					</section>
+
+					<section data-background ="images/data-02.jpg">
+						<h4 style ="margin: 0px"><span class = "red">Data in the wild:</span> Iteration and impact</h4>		
+						<h2>Design meaningful measures</h2>						
+
+						<ul>
+							<li>Set a <span class = "red">trajectory</span> to your impact: track outputs and outcomes.</li>
+							<li>Think <span class = "red">agile</span>: Try not to be bound to a long-term measurement framework.</li>
+							<li><span class = "red">Data</span> is feedback. Always seek new data to improve your design.</li>
+							<li>Don't overcook it. Too many measures leads to paralysis.</li>
+						</ul>
+					</section>
+
+
+					<section>
+						<h4>Final thought about <span class = "red">design for impact </span></h4>
+						<p><em>"By taking a trajectory view, we keep sight of the big picture, and we’re reminded to work as agents of change, not bean counters". </em>
+						<small><br> <a href = "https://s3.amazonaws.com/ideo-org-images-production/downloads/113/original/IDEOorg_Impact_A_Design_Perspective.pdf">Taken from "Impact: A Design Perspective" by IDEO (2015)</a></small></br>
+					</section>
+
+
+
+
+				</section>
+
+				<!-- End -->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">And we're done...</span></h4>
+						<h1>Questions<span class = "red">?</span></h1>
+					
+						<p><small>Link to this presentation<br> <a href = "http://www.littlesketch.es/YLab/DoE/designResearch.html#/">http://www.littlesketch.es/YLab/DoE/designResearch.html</a>
+						<br> Note: press "s" for additional notes.
+						</small></p>
+
+				</section>	
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

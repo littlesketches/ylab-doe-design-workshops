@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Design 101</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/presentation.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!--Introduction and personal story-->
+				<section data-transition="convex">
+					<section>		
+						<h1 class = ""><span class = "red">Web Design 101</span></h1>
+						<h3>From usability design to psychology</h3>
+					</section>	
+					<section>
+						<h3>Me and the web</h3>
+						<div><img id = "logo" src = "images/ylab.png"><span style = "font-size: 150px"> / </span>  <img id = "logo"  src = "images/littleLogo.png"> </div>
+						<p><small>I'm a fascinated by human computer interactions. I make stuff (hack) for the web.</small></p>
+			    		<aside class="notes">
+					        About me (Brendan): For the last couple of years I've made a living as a freelancer (a 'portfolio' career). I split my time between working on an ongoing casual basis with a couple of NGO's (FYA/YLab being one where I've been handed the title of 'Technical Advisor'); and I run a design lab called 'Little Sketches' where I practice strategic design and visualisation, pretty much exclusively in the areas of environmental and social sustainability. I also tinker a lot with web technologies and data science. 
+					        
+					        When it comes to the web I'm as much of a consumer as anyone: with my 'maker' knowledge more akin to an interaction designer (but I can code, and I do develop and manage web apps and websites). I'm also particularly fascinated by cognition and the peculiarities of human behaviours - so this training is littered with lessons based in psychology and behavioural economics.	
+					    </aside>
+					</section>
+					<section>
+						<h3>You and the web</h3>
+						<div><img style="box-shadow:none ; border: none" src = "images/department.png"></div>
+						<p><small>Why would you be interested in web design?  What are some use cases?</small></p>
+			    		<aside class="notes">
+					        What are some use cases for web design for you? 
+					    </aside>
+					</section>
+				</section>
+
+				<!--The web...it evolves quickly -->
+				<section data-transition="convex">
+					<section data-background ="images/webtrends.png">
+						<h4 style ="margin-bottom:-10px">About the</h4> 
+						<h1>web + web design</h4>
+						<h4>This stuff moves really really fast</h4>
+			    		<aside class="notes">
+			    		The evolution of the web itself makes it tough to think about web design as a 'static' set of tools, tips and instruction. Before we proceed, here's a brief description of where the web is right now..
+					    </aside>
+					</section>
+					<section data-background ="images/webtrends.png">
+						<h1>Web 2.0</h1>
+						<h4>aka the social web*</h4>	
+						<p><small><em>From publishing to participation...in apps, and mobile too!</em></small></p>
+			    		<aside class="notes">
+			    		- Characteristics and terms are debated between what we generally consider "Web 1.0" (the early web) and where we are now. However what does characterise Web 2.0 is the move from publishing (many blogs and personal pages) to participation. Social networking sites - where user generated content rules - are dominant players on the Internet, and they are changing the way we both access and interact with other pages. Content like podcasts, blogs and tags are also a major part of Web 2.0.
+			    		- The web browser as a platform for apps is an equally distinct characteristic of what we know call web 2.0. 
+			    		- Also note that Tim Berners-Lee is critical of the term (this was his intention for the web all along)
+					    </aside>
+					</section>						
+					<section data-background ="images/webtrends.png">
+						<h4 style ="margin-bottom:-10px">And if you're wondering</h4> 
+						<h1 style ="margin-bottom:-10px">Web 3.0</h1>
+						<h4>AKA The semantic web</h4>	
+						<p><small><em>More of the same...but with more data for machines to read.</em></small></p>
+			    		<aside class="notes">
+			    		- The semantic web is being talked about as the next step of evolution of web. It basically extends what we have now - a web made up of human readable mark up language - to include more metadata in those mark up tags so that just about 'everything' is linked...think big big data sharing. 
+			    		- But this is not for now...Back to Web 2.0
+					    </aside>
+					</section>	
+				</section>
+
+				<!--Understand the web: now and into the future-->
+				<section data-transition="convex">
+					<section>
+						<h1>Web design for <span class = "red">humans</span></h1>
+			    		<aside class="notes">							
+					    </aside>
+					</section>
+					<section>
+						<h3><span>Two ways of human design: usability and psychology</span></h3>
+						<img src="images/seductiveDesign.png">
+						<p><small><em><a href ="http://bokardo.com/">Original concept by Joshua Porter</a></em></small></p>
+			    		<aside class="notes">
+			    		 We'll contend that that usability (function) and emotional design (understanding psychology) are 'timeless' principles to use in web design. Our plan today is to think about designing an 'experience' from a brief understanding the nuts and bolts of a web page and the mediums that its consumed on, to the more emotive design considerations that play on the human psyche.
+					    </aside>
+					</section>
+					<section>
+						<h3><span>...But first </span></h3>
+						<p><small>Can you have a Web Design 101 session without getting just a bit technical?</small></p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+				</section>
+
+				<!--Practical  stuff -->
+				<section data-transition="convex">
+					<section data-background ="images/seven.jpg">
+						<h4 style = "margin-bottom: -10px">Seven* slightly more technical concepts</h4>
+						<h1>About web design</h1>
+						<p><small><sup>*</sup>Yes, there are many more</small></p>
+			    		<aside class="notes">	
+			    		We're not to code a webpage, however these concepts are useful for understanding the complex thing (i.e. the Internet / Web) that you're designing 'on'.
+					    </aside>
+					</section>
+
+					<section>
+						<h2><span class = "red">What makes a website?</span></h2>
+						<p><small>A web page is a bunch of text files that give a page:</small></p>
+						<ul>
+							<li><span class = "red">Structure:</span> via a HTML (HyperText Markup Language) file. It contains "tags" that places your content on the page</li>
+							<li><span class = "red">Style:</span> via a CSS (Cascading Style Sheet) file. It has all the formatting rules</li>
+							<li><span class = "red">Interaction:</span> via (usually) a JavaScript (a programming language) file. It takes care of the fancy interactive stuff </li>
+						</ul>
+						<p><small>These languages - HTML, CSS and JavaScript - are the building blocks of every basic web page that renders in your browser (they are 'web standards')</small></p>
+						<small><p style = "margin-bottom: -2px">Bonus: CSS hacks for this site</p>
+			    		<!-- Hacks to swap themes after the page has loaded-->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">Original</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+						</small>
+			    		<aside class="notes">
+			    		Basic browser technologies and languages to understand how a web page is created in your browser.
+					    </aside>
+					</section>
+
+					<section data-background ="images/cms.png">
+						<h4 style = "margin-bottom: -10px">I'm not here to learn to code! Easier way please?!</h4>
+						<h2><span class = "red">Content Management System</span></h2>
+						<ul>
+							<li>Things like WordPress, SquareSpace and Drupal.</li>
+							<li>Pick a theme. Build a structure. Add content. Publish.</li>
+							<li>Web development for dummies but <span class = "red">users can edit content</span></li>
+							<li>Trade-off in flexibility/customisation vs ease of development.</li>
+						</ul>
+			    		<aside class="notes">
+			    		CMS's are interface to make life easier if you want to build a website without having to code. Most organisations hire a developer or agency to build their site, or they do it themselves without any technical knowledge, making a CMS very attractive (since everything is much easier to update). However be warned that to tweak things exactly the way you want it, you still might need to understand a bit of code a little.
+			    		Between pure HTML and the CMS option, there are also 'frameworks' like Bootstrap and Boilerplate, and (JavaScript) libraries that allow you to code HTML, CSS and JavaScript, but help to control basic layout functions and formatting (e.g. for say responsive design.)
+					    </aside>
+					</section>
+
+					<section data-background ="images/code.jpg">
+						<h4 style = "margin-bottom: -10px">We want to design something quite specific...</h4>
+						<h2><span class = "red">Websites vs Web Apps</span></h2>
+						<ul>
+							<li>Designed for a specific task.</li>
+							<li>Highly customised (not built on a CMS).</li>
+							<li>Usually has a database behind it.</li>
+						</ul>
+			    		<aside class="notes">
+			    		Things are getting complex here: organisations often build web apps to share data or engage users in a service. 
+					    </aside>
+					  	<p><small>Examples include applications like Gmail, Google Docs etc.</small></p>
+					</section>
+
+					<section data-background ="images/responsive.png">
+						<h4 style = "margin-bottom: -10px">Does it work on my phone?</h4>
+						<h2><span class = "red">Responsive design</span> </h2>
+						<p><em><span class = "">Websites are expected to work across all Internet enable devices</span> </em></p>
+						<ul>
+							<li>Recall <span class= "red">CSS (style):</span> it adjusts the page for your screen size</li>
+							<li>Recall <span class= "red">JavaScript (interaction):</span> it takes care of mouse <em>and</em> touchscreen gestures</li>
+							<li>This means your <span class= "red">content works everywhere</span></li>
+						</ul>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background ="images/browsers.jpg">
+						<h4 style = "margin-bottom: -10px">Will my site work on older browsers</h4>
+						<h2><span class = "red">Browser compatibility</span></h2>
+						<p><small>Remember when we said the web moves fast...</small></p>
+						<ul>
+							<li>Old versions of Internet Explorer (8 and below) are a pain.</li>
+							<li>You're good to go on Chrome, Firefox, Safari and anything current from Microsoft.</li>
+							<li>Mobile browsers are a bit behind (new stuff works best).</li>
+							<li>There are still some bugs.</li>
+						</ul>				
+						<p><em><span class = "red">Think about what devices your users will have. Design for all or provide a fallback.</span></em></p>
+
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background ="images/code.jpg">
+						<h4 style = "margin-bottom: -10px">Now what are you talking about!</h4>
+						<h2><span class = "red">Data security, open source and API's</span></h2>
+						<ul>
+							<li>Website can be made very secure (be careful).</li>
+							<li>The web itself is open source.</li>
+							<li>API's (Application Programming Interfaces) let machines talk to your site (it a data thing).</li>
+						</ul>	
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-image="images/chrome.gif">
+						<h4 style = "margin-bottom: -10px"><span class = "black">I just want to design, what can I put on a website?</span></h4>
+						<h2><span class = "red">Multi-media (and more)</span></h2>
+						<p><span class = "red"><em>If you've seen it, you can do it.</em></span></p>
+						<ul>
+							<li>Text, audio, video, images.</li>
+							<li>Nearly everything can be made 'interactive'</li>
+							<li>You can also create audio, render images, 3D models and environments (and animate them)</li>
+						</ul>				
+						<p><small>Check out <a href="https://www.chromeexperiments.com/">Chrome Experiments</a></small></p>
+
+			    		<aside class="notes">
+			    		Creative coding.
+					    </aside>
+					</section>
+				</section>
+
+				<!--Managing a build -->
+				<section data-transition="convex">
+					<section data-background ="images/wireframe.jpg">
+						<h4 style = "margin-bottom: -10px">Everything but the content:</h4>
+						<h1>Building a website?</h1>
+						<p><small>Some terms and phrases (jargon) to be aware of if you're going through the process.</small></p>
+			    		<aside class="notes">	
+			    		Here's some terms and phrases you'll here about	in any website build.					
+					    </aside>
+					</section>
+
+					<section data-background ="images/wireframe.jpg">
+						<h2>Site Architecture, User Flows and Wireframes</h2>
+						<ul>
+							<li><span class = "red">Site architecture</span>: the structure of information and how pages link together</li>
+							<li><span class = "red">User flows</span>: where you think about how a user moves through your site</li>
+							<li><span class = "red">Wireframes</span>: sketches of what the pages look like</li>
+						</ul>
+			    		<aside class="notes">
+					    Some tools to help with user flows and wireframing: Axure, Balsamiq, Invision
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<p class = "black">Illustrated examples</p>
+						<img style = "border:none ; box-shadow: none; width:470px" src="images/sitemapdrawn.jpg"><span> </span><img style = "border:none ; box-shadow: none; width:470px" src="images/wireframesketch.jpg">
+						<p class = "black"><small><em>Site maps (left) are usually hierarchical while wireframes (right) focus on layout and function</em></small></p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+
+					<section data-background ="images/wireframe.jpg">
+						<h2>Technical scope and Concept Design</h2>
+						<ul>
+							<li><span class = "red">Technical scope</span>: decide what all the interactions do (buttons, fields etc.)</li>
+							<li><span class = "red">Concept design</span>: add aesthetics to the layout</li>
+						</ul>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background ="images/wireframe.jpg">
+						<h2>Development, Testing and Roll Out</h2>
+						<ul>
+							<li><span class = "red">Development</span>: someone goes and codes it up</li>
+							<li><span class = "red">Testing</span>: testing of the site (preferably with users!)</li>
+							<li><span class = "red">Roll Out</span>: put your site 'online'</li>
+						</ul>
+			    		<aside class="notes">
+			    			Some tools to help with testing Optimizely, Mousley
+					    </aside>
+					</section>
+
+					<section data-background-color = "#000">
+						<h4>Example of a user centered web design process</h4>
+						<img style = "border:none" src="images/ucdprocess.png">
+						<p><em><small><span class = "red">Web design is generally more 'linear' then regular design</span></small></em> </p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+				</section>
+
+				<!--Designing content-->
+				<section data-transition="convex">
+					<section data-background ="images/data-01.jpg">
+						<h4>Web Design 101</h4>
+						<h1>Designing content</h1>
+						<h4><span class = "red"></span></h4>
+			    		<aside class="notes">							
+					    </aside>
+					</section>
+
+					<section data-background ="images/data-01green.jpg">
+						<h2>Start with a <span class = "red">Content strategy</span></h2>
+						<p><em> Answer these before you build anything!</em></p>
+							<ul>
+								<li>What does your site need to accomplish?</li>
+								<li>What do you want users to do when they get there?</li>
+								<li>What is a successful interaction?</li>
+								<li>How does the website support your organisational or project goals?</li>
+								<li>How will your users needs be satisfied?</li>
+							</ul>
+			    		<aside class="notes">
+						The content strategy refers to everything that goes into both planning and managing your content  This includes the text, as well as other forms of communication like pictures, video, and audio  And it’s not just about what goes on your site, but also about how the site functions 
+					    </aside>
+					</section>
+
+					<section data-background ="images/data-01red.jpg">
+						<h2><span class = "red">Managing</span> and <span class = "red">curating</span> content</h2>
+						<p><em>You have more than the users needs!</em></p>
+							<ul>
+								<li>Use only what you need.</li>
+								<li>Do a content audit (<a href = "http://uxmastery.com/how-to-conduct-a-content-audit/">help here</a>). </li>
+								<li>Design "information" (next)</li>
+							</ul>
+			    		<aside class="notes">
+			    		A content audit is the activity of checking all of the content on a website, and compiling it into a big list. There are three main types of audits you can perform:
+
+						- Full content inventory: A complete listing of every content item on the site. This may include all pages as well as all assets (such as downloadable files and videos).
+						- Partial content inventory: A listing of a subset of the site’s content. A partial inventory may include, for example, the top few levels of a hierarchical site or the past six months of articles. All sections of the site will be covered.
+						- Content sample: A less detailed collection of example content from the site.
+					    </aside>
+					</section>
+
+					<section data-background ="images/data-01.jpg">
+						<h2><span class = "red">Information hierarchy</span></h2>
+						<p><em>Users don't read the page like we intend. They scan.</em></p>
+							<ul>
+								<li><span class = "red">Inverted pyramid</span> (journalist structure)</li>
+								<li>Use <span class = "red">headings</span>: they helps users <em>and</em> search engines.</li>
+								<li>Keep it short and sweet.</li>
+								<li>Remember accessibility <a href="https://www.w3.org/WAI/yourWAI">(link to useful resources)</a></li>
+								<li>Think <span class = "red">mobile first?</span></li>
+							</ul>
+			    		<aside class="notes">
+			    		Structure and metadata matters (RSS readers)
+					    </aside>
+					</section>
+	
+
+	
+					<section data-background ="images/data-01.jpg">
+						<h2>Streamline information for <span class = "red">interactions</span></h2>
+						<ul>
+							<li>Reduce <span class = "red">options</span></li>
+							<li>Reduce <span class = "red">words</span></li>
+							<li>Reduce user stress/<br>cognitive load (illusion counts!)</li>
+						</ul>
+			    		<aside class="notes">
+			    		While some people may make rational decisions, it’s more likely we make decisions based on things such as:
+						• available information (also known as bounded rationality)
+						• heuristics and biases (mental shortcuts to help us make safe decisions quickly)
+						• how a question is presented (also know as a frame)
+
+						Many of the conclusions from all these different studies can be summarized as follows:
+						• We are not very good at making long-term decisions.
+						• We are better at understanding relative rather than absolute values.
+						• emotion or affect influences our behaviors.
+						• We are very bad at predicting what will make us happy, and we are even bad at describing
+						what made us happy in the first place.
+					    </aside>
+					</section>
+					<section data-background-color = "#fff" data-background="images/magiccolours.jpg">
+						<p class = "" style="margin-bottom:0px"><em>Too many options!</em></p>
+						<img style="box-shadow:none ; border: none ; height: 550px; margin-bottom:-10px"  src = "images/options03.png">
+						<p class = "" style="margin-bottom: 0px"><em><small>Paralysis by choice - see <a href = "https://faculty.washington.edu/jdb/345/345%20Articles/Iyengar%20%26%20Lepper%20(2000).pdf">Iyenger and Lepper (2000)</a></small></em></p>
+			    		<aside class="notes">
+						The Sheena Iyengar and Mark Lepper study looked at how shoppers reacted when many different  flavors of jams were made available to them.* some shoppers had only six jams to choose from; others could select from 24 varieties. While shoppers certainly preferred more choices, the data revealed something different: when there were fewer options (only six  flavors), ten times as many people made a purchase!
+				    	</aside>
+					</section>
+					<section data-background-color = "#fff" data-background="images/magiccolours.jpg">
+						<p class = ""><em>Direct users through information hierarchy</em></p>
+						<img style="box-shadow:none ; border: none"  src = "images/options.png">
+						<p class = "" style="margin-bottom: 0px"><em><small>The aim here is to discourage putting purchases on hold</small></em></p>
+					</section>
+					<section data-background-color = "#fff" data-background="images/magiccolours.jpg">
+						<p class = ""><em>The illusion of asking less of users</em></p>				
+						<img style="box-shadow:none ; border: none"  src = "images/options02.png">
+					</section>
+
+					<section data-background-color = "#fff" data-background="images/magiccolours.jpg">
+						<p class = ""><em>Compare this...</em></p>	
+						<img  style="box-shadow:none ; border: none"  src = "images/payment01.png">
+			    		<aside class="notes">
+			    		Every field you could ask for...
+					    </aside>
+					</section>
+
+					<section data-background-color = "#fff" data-background="images/magiccolours.jpg">
+						<p class = ""><em>...with this (smart fields)</em></p>						
+						<img style="box-shadow:none ; border: none ; height: 600px"   src = "images/payment02.png">
+			    		<aside class="notes">
+			    		Vs In this option the card type is detected from the users first four digits (eliminating that as a choice), and the information to find the security number appears automatically when the user reaches that field.
+					    </aside>
+					</section>
+
+					<section data-background ="">
+						<h2>Images, audio and video</h2>
+						<p><em>We are visual beings. And we like to be entertained.</em></p>
+						<p><small><em>But sometimes less is more.</em></small></p>
+			    		<aside class="notes">
+			    		Be careful on about overdoing it. Too many images can confuse a page (design it properly, consider carousels etc.). Be careful about the length of audio and videos - there is a temptation to record and put everything online. Edit! Media files can also get pretty big. Compress to a reasonable size, and use streaming services if you can (Youtube, Vimeo, soundcloud etc.). This reduces stress on your servers and makes your stuff more 'shareable'				 </aside>
+					</section>
+				</section>
+
+				<!--Emotional Design: Designing for behaviour-->
+				<section data-transition="convex">
+					<section data-background ="images/emotionaldesign.png">
+						<h4>Web Design 101</h4>
+						<h1>Human factors</h1>
+						<h4>Experience design lessons from <span class = "red">psychology</span></h4>
+			    		<aside class="notes">							
+			    			Images taken from the book "Emotional Design" by Don Norman - in this book speaks about his emotional attachment to objects that simply delight, even if a bit odd and nonsensical (like the teapot with a handle under the spout )
+					    </aside>
+					</section>
+
+					<section data-background-color = "#fff">
+						<h2 style="margin-bottom:-20px; margin-top:-10px"><span class = "black">Functional to </span><span class = "red">meaningful web design</span></h2>
+						<img style ="border:none ; box-shadow: none ; height: 550px ;margin-bottom: -20px" src="images/pyramid.jpg">
+						<p><small><a href = ""><br>Heirarchy from Anderson 2011</a></small></p>
+
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background  ="images/emotionaldesign.png">
+						<h2 style = "margin-bottom:-10px"><span class = "red">Connect behavioral goals</span></h2>
+						<h4>with your (project or organisational) goals</h4>
+						
+							<p>Doing this links design with the outcome you want</p>
+			
+			    		<aside class="notes">
+			    			There's a good chance the visual designer will not be the content designer. This creates unity. It:
+			    			Brings focus: Knowing what behaviors to design for at a page by page level creates focus.
+			    			Spawns creative ideas: By agreeing to specific behavioral goals up front, you can evaluate proposed designs.
+					    </aside>
+					</section>
+
+					<section  data-background ="images/data-01green.jpg">
+						<h2>Measuring success: <span class = "red">analytics</span></h2>
+						<p><em><span class = "red">Understand behaviours matter to you</span></em></p>
+						<ul>
+							<li>Page views</li>						
+							<li>Click through</li>
+							<li>Bounce rate (people come but don't come back)</li>
+							<li>Registered users (sign ups)</li>
+							<li>Adoption (regular users)</li>
+							<li>Referrals etc.</li>
+						</ul>
+						<p><em>There are tools to measure just about anything</em></p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color = "rgb(225,244,253)"  data-background = "images/designelements.png">
+						<p style="text-align:left"><small><span class = "black"><em>...back to 'design'</em></small></span></p>
+						<h2 style="text-align:left ; line-height: 1" ><span class = "red">Visual design</span></h2>
+						<h4 style="text-align:left ; line-height: 1" ><span class = "black">Mapping everything <br>on a web page to <br>cognition and affect</span></h4>
+						<p style ="text-align:left"><small><a href = "">Visual taxonomy <br>from Anderson 2011</a></small></p>
+						<br><br><br><br><br><br><br><br><br>
+			    		<aside class="notes">
+							Basic design elements of color, typography and white space</li>
+							Iconic elements: buttons, navigation, fields etc. (semiotics)</li>
+							Content: words and images (what users are seeking)</li>
+							Texture and decoration (not typically essential)</li>
+					    </aside>
+					</section>
+
+					<section data-background = "images/hugshakers.jpg">
+						<h2 style="margin-bottom:-10px"><span class = "red">Attractive things</span> work better</h2>
+						<h5><span class = "faded">(and not just to artsy-folk)</h5>
+						<ul>
+							<li>Visual attractiveness</li>
+							<li>The grid</li>
+							<li>Gestalt psychology</li>
+						</ul>
+
+						<p><small><a href = "http://www.jnd.org/dn.mss/CH01.pdf"><br>See studies by Don Norman in "Emotional Design" (2003)</a></small></p>
+			    		<aside class="notes">
+			    		Norman cites evolutionary biology and what we know about how our brains work. Basically, when we are relaxed, our brains are more flexible and more likely to find workarounds for difficult problems. In contrast, when we’re frustrated and tense, our brains get a sort of tunnel vision where we only see the problem in front of us
+
+						According to a 2002 study out of Stanford university, it is the “appeal of the overall visual design of a site, including layout, typography, font size, and color schemes,” (Fogg, et al., 2002).  e look and feel of a site influenced judgments about credibility far more than other factors like structure, usefulness of the information, tone of the content, and name recognition<
+
+						First impressions count (as little as 50ms)
+						
+			    		Emotional Design: the ATM example
+
+			    		CHI 2007 conference paper (cf ANderson, 2013) users were asked to “judge the relevancy of identical search results from different search engines. “Participants in the study indicated that the results from Google and Yahoo were superior to identical results found through Windows live or a generic search engine.” 
+
+			    		In one study, described in the article “a blessing, not a Curse: experimental evidence for beneficial effects of Visual aesthetics on Performance” (Moshagen, 2009), volunteers completed a series of search tasks on a site that provided health-related information. “Four versions of a website were created by manipulating visual aesthetics (high vs. low) and usability (good vs. poor)”  e results? Good visual aesthetics did compensate for poor usability, improving task completion time, and reducing errors.
+
+			    		“We Influence of Design aesthetics in usability testing: effects on user Performance and Perceived usability,” (Sonderegger and Sauer, 2009), presented adolescents with one of two mobile phones, an attractive one, and one less so.  The conclusion?
+						“The visual appearance of the phone had a positive effect on performance, leading to reduced task completion times for the attractive model.”
+					    </aside>
+					</section>
+
+					<section data-background  ="images/sagmeister.png">
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color= "#fff">
+						<img style="box-shadow:none ; border: none"  src="images/gestalt.jpg"> 
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background = "images/fya.png">
+						<h2><span class = "red">Personality</span> matters?</h2>
+						<ul>
+							<li><span class = "red">Personality:</span> we identify with (or avoid) certain personalities (and brands).</li>
+							<li><span class = "red">Tone:</span> match the verbal and visual.</li>
+							<li><span class = "red">Humour:</span> is appropriate (or inappropriate) based on the situation, not the industry.</li>
+						</ul>
+			    		<aside class="notes">
+			    			Trust is related to personality. Perceptions and expectations are linked with personality. Consumers choose products that are extensions of 
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h2><span class = "red">Nine more brain hacks in Web Design</span></h2>
+						<p><span class = "black">Demonstration of psychology in web design</span></p>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3 style ="margin-bottom: -10px"><span class = "red">Progress and sequencing</span></h3>
+						<p style ="margin-bottom: -5px"><span class = "black"><em>We're more likely to take action when tasks are broken down</em></span></p>
+						<img style="box-shadow:none ; border: none; height: 500px; margin-bottom: -10px"  src = "images/linkedin.png">
+						<p><em><span><small class = "black">Show progress and break down complex tasks</small></span></em></p>						
+			    		<aside class="notes">
+			    		Nunes and Dreze...start with some 'free' progress
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red">Feedback Loops</span></h3>
+						<p style ="margin-bottom: -10px"><em><span class = "black">We love to compare ourselves to others (and ourselves)</span></em></p>
+						<img style="box-shadow:none ; border: none"  src = "images/kahn.png">
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red">Status and achievements</span></h3>
+						<p><em><span class = "black">We engage in activities when achievement is recognised</span></em></p>
+						<img style="box-shadow:none ; border: none"  src = "images/codeacademy.png">
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3 style="margin-bottom:-10px" ><span class = "red">Status quo bias</span></h3></p>
+						<p><em><span class = "black">(aka path of least resistance, defaults and suggestion)</span></em></p>
+						<p style="margin-bottom:-10px"><small><a href = "https://www8.gsb.columbia.edu/sites/decisionsciences/files/files/Johnson_Defaults.pdf">Do Defaults Save Lives? (Johnson and Goldstein, 2003)</a>: <br><span class = "black">Organ donor rates in selected European countries</span></small></p>
+						<img style="box-shadow:none ; border: none; margin-bottom:-10px"  src = "images/defaults.png">
+						<p><small><span class = "black">We're just a bit lazy sometimes</span></small></p>
+
+			    		<aside class="notes">
+						Inaction is easier than action. We are also highly influenced by suggestion (particularly if this comes from someone we know). Social media (Facebook, Twitter, Instagram etc.) are a prime example of suggestions (with social proofs); as well as recommendation engines you see at Amazon, Netflix etc.	
+						Link to the study by Johnson and Goldstein (2003) about organ donor rates is provided in the blue hyperlink. 	    		
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red">Challenges and games</span></h3>
+						<p><em><span class = "black">We delight in challenges...that are appropriate</span></em></p>
+						<img style="box-shadow:none ; border: none ; height: 400px ;margin-bottom:-10px"  src = "images/flow.png">
+						<p style="margin-bottom:-10px"><small><em><a href = "http://www.ted.com/talks/mihaly_csikszentmihalyi_on_flow?language=en">Mihaly Csikszentmihalyi on thh concept of 'Flow' (Ted talk)</a></em></small></p>
+			    		<aside class="notes">
+			    		Mihaly Csikszentmihalyi  idea of “flow.” flow is defined as “the state in which people are so involved in an activity that nothing else seems to matter; the experience itself is so enjoy- able that people will do it even at great cost, for the sheer sake of doing it.” this is discussed in Flow: The Psychology of Optimal Experience, 1990, by Mihaly Csikszentmihalyi
+						Goals. “Site designers assume that the visitor already knows what to choose. that’s not true. People enter hoping to be led somewhere, hoping for a payoff.”
+						Feedback. “Most Web sites don’t very much care what you do. it would be much better if they said, ‘You’ve made some interesting choices.’”
+						Challenge. “A flow experience has got to be challenging. Anything that is not up to par is going to be irritating or ignored.”
+						Progression. “You need clear goals that fit into a hierarchy, with little goals that build toward more meaningful, higher-level goals.”
+
+						[Flow is] being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz. Your whole being is involved, and you’re using your skills to the utmost.
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red"> We are drawn to faces</span></h3>
+						<p><span class = "black"><em>The mere presence of others dramatically changes our behavior.</em></span></p>
+						<img style="box-shadow:none ; border: none ; margin-bottom:-10px"  src = "images/facebook01a.png">
+						<p><em><small><span class = "black">Facebook designs with a lot of social proofs. Notice there are many options for reasons (to confuse).</span></small></em></p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<p><em><span class = "black">...and if that doesn't work</span></em></p>
+						<img style="box-shadow:none ; border: none"  src = "images/facebook02.png">
+						<p><em><small><span class = "black">Notice the 'default suggestion' to find more friends</span></small></em></p>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red">Surprise and delight</span></h3>
+						<p><em><span class = "black">We take pleasure in nice surprises (and humour)</span></em></p>
+						<img style="box-shadow:none ; border: none"  src = "images/google.png">
+			    		<aside class="notes">
+			    		 Examples include: Mailchimp, Google doodle etc.
+					    </aside>
+					</section>
+
+					<section data-background-color="#fff">
+						<h3><span class = "red">Framing + Anchoring</span></h3>
+						<p><span class = "black">Our 'best estimates' (or perception) can be influenced if we 'primed' by totally different information.</span></p>			
+			    		<aside class="notes">
+			    		In one study by Dan Ariely, students were asked to write the last two digits of their social security number. with this number in front of them, Ariely asked if they would pay this amount for items whose value they did not know (wine, chocolate, and computer equipment).  They were then asked to submit a bid for these items.  Thee results?  Those audience members with higher two-digit numbers placed bids that were “between 60 percent and 120 percent more” than those students with the lower social security numbers. we’re great at setting relative values, but terrible at placing an absolute value on something. An obvious example of this comes in the form of charities that set a range of options from which to choose. If the options are something like $5, $10, $25, and $50, we’re going to donate much less than if the options start at $50 and go up to $5,000.  These anchors give us a cue from which we can adjust our assessment
+					    </aside>
+					</section>
+				</section>
+
+				<!-- Bringing it back together -->
+				<section data-transition="convex">
+					<section>	
+
+						<h4 style = "margin-bottom:-10px">Bringing it back together.</h4>
+						<h2><span class = "red">Five easy pieces</span></h2>
+						<ul>
+							<li>The web changes fast...human behaviour, not so much.</li>
+							<li>Design content for the user, not you.</li>
+							<li>Be visual. Be engaging. Reinforce or replace text with visuals.</li>
+							<li>Hack the brain. Incorporate human biases into design (but don't be evil).</li>
+							<li>Obsess over detail and micro interactions. They matter.</li>
+						</ul>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+				</section>
+
+				<!-- End -->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">And we're done...</span></h4>
+						<h1>Question?<span class = "red">?</span></h1>
+					
+						<p><small>Link to this presentation<br> <a href = "http://www.littlesketch.es/YLab/DoE/webDesign.html#/">http://www.littlesketch.es/YLab/DoE/webDesign.html</a>
+						<br> Note: press "s" for additional notes.
+						</small></p>
+				</section>	
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

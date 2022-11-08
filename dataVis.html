@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Data Visualisation</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/presentation.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!--Introduction and personal story (from Excel to the web) -->
+				<section data-transition="convex">
+
+					<section  data-background-color="#000" data-background ="images/flight-patterns01.jpg"><!--data-background-video ="video/FlightPatterns.mp4">-->
+						<h1 class = ""><span class = "red">Data Visualisation</span></h1>
+						<br><br><br><br><br><br><br><br>
+						<h3 class = "">Exploring visions of <span class = "red">truth</span> and <span class = "red">beauty</span></h3>
+
+			    		<aside class="notes">
+			    		The video in the background is from the project "Flight Patterns" by Aaron Koblin
+					    </aside>
+					</section>	
+				
+					<section>
+						<h3>(More) about me</h3>
+						
+						<div><img id = "logo" src = "images/ylab.png"><span style = "font-size: 150px"> / </span>  <img id = "logo"  src = "images/littleLogo.png"> </div>
+			    	
+						<p><small>Confession: For me, it started with Microsoft Excel. And I still use it...</small></p>
+			    		<aside class="notes">
+					        About me (Brendan): For the last couple of years I've made a living as a freelancer (a 'portfolio' career). I split my time between working on an ongoing casual basis with a couple of NGO's (FYA/YLab being one where I've been handed the title of 'Technical Advisor'); and I run a design lab called 'Little Sketches' where I practice strategic design and visualisation, pretty much exclusively in the areas of environmental and social sustainability. I also tinker a lot with web technologies and data science. 
+					        Previously, I spent dozen years in strategy and technology consulting, investment management, but mostly as a sustainability consultant (main passion). 
+
+					        I've been getting serious about data visualisation for around five years - studying and tinkering, and getting into the 'community' to play at edges of visual design and the technologies that support them - but looking back the work I've done more than 10 years ago, it should have been pretty apparent I neede to move out of Excel.	 
+					    </aside>
+					</section>
+
+
+					<section data-background-color="#fff" data-background ="images/excel.jpg">
+						<h3><span class = "black">(Too much) fun with spreadsheets</span></h3>
+						<p><span class = "black"><small>Beyond pivot tables and charts</small></span></p>
+			    		<aside class="notes">
+				       		This is a brief selection of 'stuff' I was making with Excel. Pretty much all of this sat on top of large models and datasets: acting as both an entry point and summary of the output. Something that I learned through practice is that if you want a nice visualisation of data to 'communicate' meaning, you need to do a lot of work to prepare your data and explain to your audience what your message is. For a static chart this might simply be setting the axes, design a good key or legend, and adding clear labels and headings. But as the dataset becomes more complex - starting with multiple charts and views, then moving more and more into interactive components, then data stories - the complexity of designing a everything but the visualization amplifies very quickly.  
+
+				       		We'll also see that visualisation is both a tool for exploring data, and explanation. More on that later.
+					    </aside>
+					</section>
+
+					<section data-background ="images/excel/Slide01.png" data-autoslide="1500"></section>	
+					<section data-background ="images/excel/slide04.png" data-autoslide="1400"></section>	
+					<section data-background ="images/excel/Slide05.png" data-autoslide="1300"></section>	
+					<section data-background ="images/excel/Slide06.png" data-autoslide="1200"></section>	
+					<section data-background ="images/excel/Slide07.png" data-autoslide="1100"></section>	
+					<section data-background ="images/excel/Slide09.png" data-autoslide="1000"></section>	
+					<section data-background ="images/excel/Slide10.png" data-autoslide="900"></section>	
+					<section data-background ="images/excel/Slide11.png" data-autoslide="800"></section>	
+					<section data-background ="images/excel/Slide12.png" data-autoslide="700"></section>	
+					<section data-background ="images/excel/Slide13.png" data-autoslide="600"></section>	
+					<section data-background ="images/excel/Slide15.png" data-autoslide="500"></section>	
+					<section data-background ="images/excel/Slide17.png" data-autoslide="500"></section>	
+					<section data-background ="images/excel/Slide18.png" data-autoslide="500"></section>	
+					<section data-background ="images/excel/EAGA.png" data-autoslide="500"></section>
+
+					<section data-background ="images/excel/Slide19.png">
+						<h3>Then at some point...you break the spreadsheet</h3>
+						<p><small>This is so not fun. We'll talk about tools later too.</small></p>
+
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background ="images/com-01.png">
+						<h3><span class = "red">And you need more</span> expressive visualisation tools...</h3>
+						<p><small><span class = "">The web...there are (almost) no limits</span></small></p>
+			    		<aside class="notes">
+		        	    </aside>
+					</section>
+				</section>
+
+				<!--What data visualisation can really do...my inspiration -->
+				<section data-transition="convex">
+					<section data-background ="images/wefeelfine.jpg">
+						<h2 style="text-align: left">Inspiration</h2>
+						<h4 style="text-align: left">www.wefeelfine.org</h4>
+						<p style="text-align: left"><small>A project from 2007 <br>by <a href="http://www.number27.org">Jonathan Harris</a><br>and <a href = "https://www.media.mit.edu/people/sdkamvar">Sep Kamvar</a></small></p>
+						<br>
+						<p style="text-align: left"><small><a href="https://www.ted.com/talks/jonathan_harris_tells_the_web_s_secret_stories?language=en#">Link to Jonathan Harris at<br> TED discussing the project</a></small></p>
+					</section>
+					<section data-background ="images/wefeelfine.jpg">
+
+						<h2 style="text-align: left">Thoughts?</h2>
+						<br><br><br><br><br>
+					</section>							
+				</section>
+
+				<section data-transition="convex">
+					<section data-background ="images/EdgeBundling.png">
+						<h2 style="margin-bottom: -10px">The <span class = "red"> value</span> of Visualisation</h2>
+						<h4><span class = "red"></span>Lessons in math and history</h4>
+
+			    		<aside class="notes">
+							
+					    </aside>
+					</section>
+
+					<section data-background ="images/anscombe-01.png">
+						<h4><span class = "red">Take a look at these four data sets...</span></h4>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section data-background ="images/anscombe-02.png">
+						<h4><span class = "red">...now let's visualise the data.</span></h4>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section>
+						<h3>Ok no more numbers...</h3>
+					</section>
+
+					<section>
+						<h4 style="margin-bottom:-10px">History lesson!</h4>
+						<h2>Four <span class = "red">Classic</span> Visualisations</h2>
+			    		<aside class="notes">
+
+					    </aside>
+					</section>
+
+					<section  data-background-color="#fff">
+						<h3><span class = "red">Late 1700's: William Playfair invents charts... </span></h3>
+						<img style = "border:none ; box-shadow: none; height:600px" src="images/playfairBoT.png">
+			    		<aside class="notes">
+			    		Playfair designed the first charts as we know them. This line chart (with area) is strangely underused today...the defaults in Excel don't handle this type of chart. Playfair also designed what we know now as pie charts, and some variants on histograms (bar charts)
+					    </aside>
+					</section>
+
+					<section  data-background-color="#fff">
+						<h3 style ="margin-bottom:-10px"><span class = "red">1854: Jon Snow plot's cases of Cholera in London</span></h3>
+						<img style = "border:none ; box-shadow: none; height:600px; margin-bottom:-10px" src="images/snow-cholera.jpg"><span>
+			    		<h4><span class = "red">...and traces the outbreak to a pump on Broad Street</span></h4>
+			    		<aside class="notes">
+			    		Snow is sometimes referred to as the first epidemiologist. This seeimingly trivial idea of plotting 'data' on a map however was led by curiosity and saved many, many lives.
+					    </aside>
+					</section>
+
+					<section  data-background-color="#fff" data-background ="images/nightingale.jpg">
+						<h4 style = "margin-bottom: -10px"><span class = "red">Circa 1857:</h4>
+						<h3 style = "margin-bottom: -5px"><span class = "red">Florence Nightingale</span></h3> 
+						<h4 style = "line-height:1"><span class = "black">creates a visualisation of the <br>causes of deaths in the Crimean War</span></h4>
+						<br><br><br><br><br><br><br><br><br>
+			    		<aside class="notes">
+			    		Yes, the same Florence Nightingale. Nightingale used this 'rose' chart to deomnstrate the huge losses through preventable diesease, which contributed to the strategy to regulalry replace troops to prevent the spread of disease on teh frontline.
+			    		Here the blue outer wedges represent the deaths from contagious diseases, such as cholera and typhus. The central red wedges show the deaths from wounds. The black wedges in between represent deaths from all other causes. If this rate had continued, and troops had not been replaced frequently, then disease alone would have killed the entire British Army in the Crimea. Nightingale's graph not only dramatised the extent of the needless deaths among the soldiers during the Crimean War, but it was used as a tool to persuade the government and medical profession that deaths were preventable if sanitation reforms were implemented in military and civilian hospitals.
+					    </aside>
+					</section>
+
+					<section  data-background-color="#fff">
+						<h3 style="margin-bottom:-10px"><span class = "red">1869: Charles Minard plots Napoleon's march to Moscow</span></h3>
+						<img style = "border:none ; box-shadow: none; width: 1080px ;height: 450px; " src="images/minard.png"><span>
+			    		<aside class="notes">
+					    </aside>
+					</section>
+
+					<section  data-background-color="#fff" data-background ="images/minardEng.png">
+			    		<aside class="notes">
+			    		Minards chart in English. There are six types of data (in two dimensions): the number of Napoleon's troops; distance; temperature; the latitude and longitude; direction of travel; and location relative to specific dates
+					    </aside>
+					</section>
+
+					<section>
+						<h2>So <span class = "red">why create</span> visualisations?</h2>
+						<ul>
+							<li>Answer questions (or ask them)</li>
+							<li>Make decisions</li>
+							<li>See data in context</li>
+							<li>Find patterns</li>
+							<li>Present an argument</li>
+							<li>Tell a story. Inspire.</li>
+						</ul>
+						<p style = "text-align: right"><small>Adapted learnings from<a href = "http://homes.cs.washington.edu/~jheer/"> Jeff Heer <br>(University of Washington and Stanford)</a></small></p>
+			    		<aside class="notes">
+			    		Jeff Heers work with students at Stanford - particularly Mike Bostock with the D3.js project - and as an academic and entrepreneur in his own right are worth further exploration (if you have time). The Data Wrangler tool from his company 'Trifacta' is also worth checking out if you deal with a lot of data.
+					    </aside>
+					</section>
+				</section>
+
+				<!-- Concepts of truth and beauty-->
+				<section data-transition="convex">
+					<section data-background ="images/magiccolours.jpg">
+						<h3 style="margin-bottom:-10px">So what makes a</h3>
+						<h1>good visualisation?</h1>
+					</section>
+
+					<section data-background-color="#000" data-background ="images/moritz.png">
+						<h1 style = "margin-bottom:-20px"><span class = "red">Truth+Beauty</span></h1>
+						<p style = "text-align: center"><small><a href = "http://truth-and-beauty.net/">Moritz Stefaner</a></small></p>
+					</section>
+
+					<section data-background ="images/magiccolours.jpg">
+						<h2>You must be truthful to the data</h2>
+						<p>"Designing an information graphic, a visual display of data or phenomena, is a moral act. We should strive for clarity, rigor, and depth"</p>
+						<p><small><a href="http://visualoop.com/246/talking-with-alberto-cairo">Alberto Cairo (2012)</em></a></small></p>									
+			    		<aside class="notes">
+			    		 Every visualisation is a model.
+			    		 Apophenia means we look for patterns that don't exist.
+					    </aside>
+
+					</section>
+
+					<section data-background ="images/magiccolours.jpg">
+						<h2>Beauty matters</h2>
+						<p>"Beauty in data visualization arises from hitting a certain sweet spot between order and chaos, exactly the point where the information is really rich and seems infinite, but there is still enough structure and guidance to lead you from one interesting discovery to the next one."</p>
+						<p><small><a href="http://visualoop.com/blog/19269/talking-with-moritz-stefaner">Moritz Stefaner (2013)</em></a></small></p>
+					</section>
+
+					<section data-background ="images/magiccolours.jpg">
+						<h2>+Audience</h2>
+						<p>Know your audience! They decode your visulisation.</p>
+						<img style = "margin-bottom:-10px"src = "images/communication.png"></img>
+						<p>But don't understimate curiosity.</p>
+					</section>
+
+					<section data-background ="images/magiccolours.jpg">
+						<h2>Why we like visualisations</h2>
+						<p>The <a href="http://seeingdata.org">Seeing Data Project</a> found the following affect how people liked visualisations:</p>
+						<ol>
+							<li>Interest in the subject matter</li>
+							<li>Trust in the source</li>
+							<li>Existing beliefs and opinions</li>
+							<li>Time available</li>
+							<li>Emotions (first impression)</li>
+							<li>Confidence (skills)</li>
+						</ol>
+						<p><small><a href="http://seeingdata.org/developing-visualisation-literacy/data-visualisation-and-you/">See the video explanation (or paper) of these findings</em></a></small></p>
+					</section>
+
+
+					<section data-background ="images/magiccolours.jpg">
+						<h2>Visualisation types</h2>
+						<p>Exploration or Explanation</p>
+						<p><em><small>These are very different types of visualisations that have very different audiences</small></em></p>
+   						<aside class="notes">
+			    		 Exploratory visualisations are used in analysis to search for patterns, trends and anomalies: they help use look for interesting stories in the data and do not need to be 'polished'. Explanatory visulisations are more narrative based and are intended to inform and enlighten an audience that may not be familiar with the data or topic. Data journalism pieces are prime examples of explanatory visualisations.
+					    </aside>
+					</section>
+
+				</section>
+
+				<!-- Chart rules-->
+				<section>
+					<section data-background ="images/sankey.png">
+						<h1 style="margin-bottom:-10px">Tips for charts</h1>
+						<p>Lessons from cognitive science</p>
+					</section>
+
+					<section data-background ="images/sankey.png">
+						<h2>Choose your visual encoding carefully</h2>
+						<h4>Think about <span class = "red">how we see</span></h4>
+					</section>
+
+					<section data-background-color="#fff"  data-background ="images/ClevelandMcGill02.png">
+						<h2 style="text-align: left; line-height: 1 ; margin-bottom: 0px" class = "red"><span class = "red">Hierarchy of <br>perceptual <br>tasks</span></h2>
+						<h4 style="text-align: left ;margin-top: 0px"><span class = "red">Cleveland and MacGill (1973)</span></h4>
+						<p style = "text-align: left"><small><a href="https://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-spr/readings/cleveland.pdf"><em>Graphical Perception: <br>Theory, Experimentation, <br>and Application to <br>the Development of Graphical Methods</em></a></small></p>
+						<br><br><br><br>
+					</section>
+
+					<section data-background ="images/pie.jpg">
+						<h2>Pie charts...</h2>
+						<h4>The dogma says no!</h4>
+					</section>
+
+					<section data-background-color="#fff">
+						<h2><span class = "red">Data to Ink Ratio</span></h2>
+						<p><em><span class = "black">Focus on the data. Get rid of chart junk</span></em></p>
+						<p style = "text-align: center"><small><a href = "https://www.edwardtufte.com/tufte/">Mantra of Edward Tufte</a></small></p>
+					</section>
+
+					<section data-background-color="#fff">
+						<p><em><span class = "black">Example of reducing chart junk</span></em></p>
+						<img style="width: 1000px; border:none ; box-shadow: none; " src="images/chartjunkreduce.png">
+						<p><em><span class = "black"><small>Chart junk = gridlines, axes, decoration.</small></span></em></p>
+					</section>
+
+					<section data-background-color="#fff">
+						<h2><span class = "red">Small multiples</span></h2>
+						<p><em><span class = "black">Information density. Comparison</span></em></p>
+						<p style = "text-align: center"><small><a href = "https://www.edwardtufte.com/tufte/">Popularised by Edward Tufte</a></small></p>
+					</section>
+
+					<section data-background-color="#fff">
+						<p><em><span class = "black">Examples of small multiples</span></em></p>
+						<img style="width: 460px; border:none ; box-shadow: none; " src="images/smallmultiples01.png">
+						<img style="width: 460px; border:none ; box-shadow: none; " src="images/smallmultiples02.png">
+						<p><em><span class = "black"><small>These are basically an array of small charts that allow for better comparison. 'Sparklines' (now available in Excel) are similar (and can be attributed to Tufte)</small></span></em></p>
+					</section>
+
+
+					<section data-background-color="#fff">
+						<h2><span class = "red">Annotation</span></h2>
+						<p><em><span class = "black">Highlight what matters. Tell the story.</span></em></p>
+					</section>
+					<section data-background-color="#fff" data-background ="images/fertility.png">
+						<p style="text-align: left"><em><span class = "black">Example of highlighting <br>the interesting</span></em></p>
+					</section>
+
+					<section data-background-color="#fff">
+						<p><em><span class = "black">Example of an annotated story</span></em></p>
+						<img style="border:none ; box-shadow: none; height: 550px; margin-bottom:-10px" src="images/driving.png">
+						<p><em><span class = "black"><small>By <a href="https://twitter.com/hfairfield?lang=en">Hannah Fairfield</a> now of the NY Times</small></span></em></p>
+					</section>
+
+					<section data-background-color="#fff" data-background ="images/charts.png">
+						<h2 style="text-align:left; line-height: 1"><span class = "red">Choosing the <br>right chart</span></h2>
+						<span class = "black">
+							<p style="text-align:left; line-height: 1.1">1. Think about the task(s) you <br>want to enable: plot what <br>you need to plot.</p>
+							<p style="text-align:left; line-height: 1.1">2. Consult a <a href="http://www.datavizcatalogue.com/">guide</a> <br>to seek out options.</p>
+							<p style="text-align:left; line-height: 1.1">3. Try different graphical forms <br>(don't trust the default).</p>
+							<p style="text-align:left; line-height: 1.1">4. Play.</p>
+						</span><
+					</section>
+
+					<!-- Crap charts -->
+					<section data-background-color="#fff">
+					<h4 style = "margin-bottom:-10px"><span class = "black">Oh and please...</span></h4>
+					<h1><span class = "red">Don't do this</span></h1>
+					</section>
+					<section data-background-color="#fff" data-background ="images/fox-news01.png"></section>
+					<section data-background-color="#fff" data-background ="images/fox-news02.png"></section>
+					<section data-background-color="#fff" data-background ="images/fox-news03.png"></section>
+					<section data-background-color="#fff" data-background ="images/pie-chart.png"></section>
+					<section data-background-color="#fff" data-background ="images/chartjunk01.png"></section>
+					<section data-background-color="#fff" data-background ="images/chartjunk02.png"></section>
+				</section>
+
+				<!-- Digital, interaction-->
+				<section>
+					<section data-background ="images/data-01.jpg">
+						<h1>Lets get digital!</h1>
+					</section>
+
+					<section data-background ="images/moebio.png">
+						<p><em>"Information visualization is just a language with everything to be discovered, and we won’t discover new awesomeness without failing. The future of information visualization is being shaped by projects that fail in many senses and that are being criticized."
+						</em></p>
+						<p style = "text-align: center"><small><a href = "http://moebio.com/">Santiago Ortiz (2012)</a></small></p>	
+					</section>
+
+					<section data-background ="images/d3.png">
+						<h2>What digital does</h2>
+						<ul>
+							<li>New tools with more power.</li>
+							<li>More expression. </li>
+							<li>More data. More depth.</li>
+							<li>More sharing (web).</li>
+							<li>More play.</li>
+						</ul>
+					</section>
+					<section data-background-color="#000" data-background ="images/socialnetwork.png">
+						<h2>Social network graphs</h2>						
+						<p style = "text-align: center"><small>Using tools like<a href = "https://gephi.org/"> Gephi </a> and<a href = "https://d3js.org"> D3.js </a> </small></p>	
+					</section>
+					<section data-background-color="#000" data-background ="images/fischermap.jpg">
+						<h2>Digital cartography</h2>	
+						<p style = "text-align: center"><small><a href = "https://twitter.com/enf?lang=enf">Map by Eric Fischer</a></small></p>						
+					</section>
+					<section data-background-color="#fff" data-background-iframe ="http://hint.fm/wind/">	
+						<p style = "text-align: center"><small><a href = "http://hint.fm/wind/">Wind map by Fernanda Viegas and Martin Wattenberg</a></small></p>
+						<br><br><br><br><br><br><br><br><br><br>
+					</section>
+					<section data-background-color="#fff" data-background ="images/NYTStreamV.png">
+						<h2 style = "text-align: left"><span class = "red">Creativity</span></h2>	
+						<p class = "black" style = "text-align: left"><small>Example of a stream graph by the NY Times</small></p>						
+						<p style = "text-align: left"><small><a href = "http://leebyron.com/streamgraph/">A 'new' chart type analysed by Lee Byron<br> and Martin Watternberg (2008)</a></small></p>						
+					</section>
+					<section data-background-color="#fff" data-background ="images/posavec.png">
+						<h2><span class = "red">Craft</span></h2>	
+						<p style = "text-align: center"><small><a href = "http://www.stefanieposavec.co.uk/">'Hand made' vis of Kerouac's book <em>On the Road</em> by Stefanie Posavec</a></small></p>						
+					</section>
+
+
+					<section data-background-color="#000" data-background ="images/tableau.jpg">
+						<h2><span class = "red">Interactivity</span></h2>
+						<ul>
+							<li>New ways to engage with data.</li>
+							<li>Users are 'explorers' of data worlds</li>
+							<li>Richer, more personalised stories.</li>
+						</ul>
+					</section>
+
+					<section  data-background ="images/data-01green.jpg">
+						<h4 style="margin-bottom:-10px">Information Seeking Mantra for interactive visualitions:</h4>
+						<h2>Design for a pattern of:</h2>
+						<ul>
+							<li>Overview first.</li>
+							<li>Zoom and Filter</li>
+							<li>Details on Demand</li>
+						</ul>
+						<p style = "text-align: center"><small><a href = "http://www.interactiondesign.us/courses/2011_AD690/PDFs/Shneiderman_1996.pdf">The Eyes Have it (Schneiderman (1996)</a></small></p>
+						
+					</section>
+
+					<section data-background-color="#fff">
+						<p><em><span class="black">OECD Better Life Index:</span></em></p>
+						<img style=" border:none ; box-shadow: none; " src="images/oecd.png">
+						<p><em><span class = "black"><small><a href = "https://http://www.oecdbetterlifeindex.org/">An interactive visualisation that follows the information seeking mantra</a></small></span></em></p>
+					</section>
+
+					<section data-background-color="#000">
+						<p><em><span>Gun Deaths in America</span></em></p>
+						<img style=" border:none ; box-shadow: none; height: 500px" src="images/guns.jpg">
+						<p><em><span><small><a href = "http://guns.periscopic.com">An interactive visualisation by design firm Periscopic</a><br>Uses a 'martini glass' structure that tells an emotive animated story before allowing users to interact.</small></span></em></p>
+					</section>
+
+					<section data-background-color="#000" data-background ="images/wsjvr.png">
+						<h2><span class = "">Data visualiation in <br>Virtual Reality?</span></h2>
+						<p><em><span><small><a href = "http://graphics.wsj.com/3d-nasdaq/">VR roller coaster: Is the NASDAQ in Another Bubble?</a></small></span></em></p>
+					</section>
+
+					<section>
+						<h2>How to <span class = "red">start</span></h2>
+						<p>Find <span class = "red">data first</span>, then the tools.</p>
+					</section>
+				</section>
+
+				<!-- End -->
+				<section data-transition="convex">
+					<section>
+						<h4><span class = "red">And we're done...</span></h4>
+						<h1>Questions<span class = "red">?</span></h1>
+					
+						<p><small>Link to this presentation<br> <a href = "http://www.littlesketch.es/YLab/DoE/dataVis.html#/">http://www.littlesketch.es/YLab/DoE/dataVis.html</a>
+						<br> Note: press "s" for additional notes.
+						</small></p>
+				</section>	
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
